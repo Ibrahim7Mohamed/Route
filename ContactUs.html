@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ContactUs</title>
+    <link href="./logo/logo.png" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+    <div class="nav-menu vh-100 position-fixed d-flex top-0">
+        <div class="nav-tab  d-flex flex-column justify-content-between vh-100 p-4">
+            <div>
+                <ul class="list-unstyled">
+                    <li class="py-2"> <a href="Search.html" class=" text-white text-decoration-none target=" _self> Search </a> </li>
+                    <li class="py-2"> <a href="Categories.html" class=" text-white text-decoration-none target=" _self> Categories </a> </li>
+                    <li class="py-2"> <a href="Area.html" class=" text-white text-decoration-none target=" _self> Area </a> </li>
+                    <li class="py-2"> <a href="Ingredients.html" class=" text-white text-decoration-none target=" _self> Ingredients </a> </li>
+                    <li class="py-2"> <a href="Yummy.html" class=" text-white text-decoration-none target=" _self> Yummy </a></li>
+                </ul>
+            </div>
+            <div>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div>
+                    <p>Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class=" d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img class="logo" src="./logo/logo.png">
+            <i class=" fa-solid fa-bars fa-2x fa-align-justify "></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="vh-100 d-flex justify-content-center align-items-center">
+        <div class="container w-75 text-center">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <input id="nameInput" onchange="inputsValidation() , nameValidate() " type="text" class="form-control"
+                        placeholder="Enter Your Name" />
+                    <span id="NameErr" class="bg-danger w-100 mt-2 d-none">
+                        only characters are allowed
+                    </span>
+                </div>
+                <div class="col-md-6">
+                    <input id="emailInput" onchange="inputsValidation() , mailValidate() " type="email" class="form-control"
+                        placeholder="Enter Your Email" />
+                    <span id="MailErr" class="bg-danger w-100 mt-2 d-none">
+                        Email not valid *exemple@yyy.zzz
+                    </span>
+                </div>
+                <div class="col-md-6">
+                    <input id="phoneInput" onchange="inputsValidation(), PhoneValidate() " type="text" class="form-control"
+                        placeholder="Enter Your Phone" />
+                    <span id="numberErr" class="bg-danger w-100 mt-2 d-none">
+                        Enter valid Phone Number
+                    </span>
+                </div>
+                <div class="col-md-6">
+                    <input id="ageInput" onchange="inputsValidation(), ageValidate() " type="number" class="form-control"
+                        placeholder="Enter Your Age" />
+                    <span id="AgeErr" class="bg-danger w-100 mt-2 d-none">
+                        Valid age is 18 and above
+                    </span>
+                </div>
+                <div class="col-md-6">
+                    <input id="passwordInput" onchange="inputsValidation() , passValidate() " type="password" class="form-control"
+                        placeholder="Enter Your Password" />
+                    <span id="passErr" class="bg-danger w-100 mt-2 d-none">
+                        Enter valid password {Minimum eight characters, at least one
+                        letter or one number}
+                    </span>
+                </div>
+                <div class="col-md-6">
+                    <input id="repasswordInput" onchange="inputsValidation() , RePassValidate() " type="password" class="form-control"
+                        placeholder="Repassword" />
+                    <span id="REpassErr" class="bg-danger w-100 mt-2 d-none">
+                        Enter the same as password
+                    </span>
+                </div>
+            </div>
+            <button id="submitBtn"   class="btn btn-outline-danger px-2 mt-3 ">
+                Submit
+            </button>
+            <button id="submitBtn1"   class="btn btn-outline-success px-2 mt-3 d-none">
+                Submit
+            </button>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/ContactUs.js"></script>
+</body>
+
+</html>
